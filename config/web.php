@@ -13,7 +13,7 @@ $config = [
     'timeZone' => 'Asia/Tehran',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
@@ -26,7 +26,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\users\User',
             'enableAutoLogin' => false,
-            'loginUrl' => ['/user/login'],
+            'loginUrl' => ['/users/login'],
             'authTimeout' => $params['time_out'],
         ],
         'errorHandler' => [

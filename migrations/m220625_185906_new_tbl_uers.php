@@ -16,7 +16,7 @@ class m220625_185906_new_tbl_uers extends Migration
             'id' => $this->primaryKey(),
             'username' => $this->string()->notNull()->unique(),
             'password' => $this->string()->notNull(),
-            'authKey' =>  $this->string()->notNull()->defaultValue(''),
+            'authKey' => $this->string()->notNull()->defaultValue(''),
             'accessToken' => $this->string()->notNull()->defaultValue(''),
         ]);
 
@@ -31,9 +31,8 @@ class m220625_185906_new_tbl_uers extends Migration
      */
     public function safeDown()
     {
-        echo "m220625_185906_new_tbl_uers cannot be reverted.\n";
-
-        return false;
+        $this->dropTable("tblUsers");
+        return true;
     }
 
     /*

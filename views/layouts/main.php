@@ -39,7 +39,7 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
             'items' => [
-                ['label' => 'ناحیه ها', 'url' => ['/site/index']],
+                ['label' => 'ناحیه ها', 'url' => ['/zone/index']],
                 ['label' => 'صدا ها', 'url' => ['/site/about']],
                 ['label' => 'زمانبندی پخش', 'url' => ['/site/about']],
                 ['label' => 'اذان و مناجات', 'url' => ['/site/about']],

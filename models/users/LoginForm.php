@@ -5,6 +5,7 @@ namespace app\models\users;
 use Yii;
 use yii\base\Model;
 
+
 /**
  * LoginForm is the model behind the login form.
  *
@@ -13,9 +14,9 @@ use yii\base\Model;
  */
 class LoginForm extends Model
 {
-    public $username;
-    public $password;
-    public $rememberMe = true;
+    public string $username;
+    public string $password;
+    public bool $rememberMe = true;
 
     private $_user = false;
 
